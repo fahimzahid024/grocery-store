@@ -15,5 +15,19 @@ Route::get('/','adminController@index');
 
 
 
-/********************Product Controller***********************/
-Route::get('/add-product','productController@add_product');
+/********************Category Controller***********************/
+Route::get('/add-category','categoryController@index');
+Route::post('/save-category','categoryController@save_category');
+Route::get('/view-category','categoryController@view_category');
+Route::get('/delete-category/{category_id}', 'categoryController@delete_category');
+Route::get('/edit-category/{category_id}','categoryController@edit_category');
+Route::post('/update-category/{category_id}','categoryController@update_category');
+Route::get('/unactive-category/{category_id}','categoryController@unactive_category');
+Route::get('/active-category/{category_id}','categoryController@active_category');
+
+
+
+/********************Product Controller**************************/
+Route::get('/add-product','productController@index');
+
+

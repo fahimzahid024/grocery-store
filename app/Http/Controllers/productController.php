@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class productController extends Controller
 {
-    public function add_product()
+    public function index()
     {
     	return view('AdminPages.add_product');
     }

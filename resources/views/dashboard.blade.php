@@ -94,26 +94,18 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ URL::to('/add-product') }}">
-                <span class="menu-title">ADD PRODUCT</span>
-              </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#layoutsSubmenu" aria-expanded="false" aria-controls="layoutsSubmenu">
-                <i class="mdi mdi-arrow-expand-all menu-icon"></i>
-                <span class="menu-title">Page Layouts</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                <span class="menu-title">CATEGORY MANAGE</span>
                 <i class="mdi mdi-chevron-down menu-arrow"></i>
               </a>
               <div class="collapse" id="layoutsSubmenu">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/boxed-layout.html">Boxed</a>
+                    <a class="nav-link" href="{{ URL::to('/add-category') }}">ADD CATEGORY</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/rtl-layout.html">Rtl</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/horizontal-menu.html">Horizontal Menu</a>
+                    <a class="nav-link" href="{{ URL::to('/view-category') }}">VIEW CATEGROY</a>
                   </li>
                 </ul>
               </div>
@@ -121,25 +113,16 @@
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#sidebar_layouts" aria-expanded="false" aria-controls="sidebar_layouts">
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-                <span class="menu-title">Sidebar Layouts</span>
+                <span class="menu-title">PRODUCT MANAGE</span>
                 <i class="mdi mdi-chevron-down menu-arrow"></i>
               </a>
               <div class="collapse" id="sidebar_layouts">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/compact-menu.html">Compact menu</a>
+                    <a class="nav-link" href="{{ URL::to('/add-product') }}">ADD PRODUCT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/sidebar-collapsed.html">Icon menu</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/sidebar-hidden.html">Sidebar Hidden</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/sidebar-hidden-overlay.html">Sidebar Overlay</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/sidebar-fixed.html">Sidebar Fixed</a>
+                    <a class="nav-link" href="pages/layout/sidebar-collapsed.html">VIEW PRODUCT</a>
                   </li>
                 </ul>
               </div>
@@ -697,7 +680,7 @@
         <!-- partial -->
        <div class="content-wrapper">
 
-            @yield('content')
+            @yield('admin_content')
 
        </div>
         <!-- content-wrapper ends -->
