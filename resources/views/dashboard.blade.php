@@ -122,7 +122,7 @@
                     <a class="nav-link" href="{{ URL::to('/add-product') }}">ADD PRODUCT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/sidebar-collapsed.html">VIEW PRODUCT</a>
+                    <a class="nav-link" href="{{ URL::to('/view-product') }}">VIEW PRODUCT</a>
                   </li>
                 </ul>
               </div>

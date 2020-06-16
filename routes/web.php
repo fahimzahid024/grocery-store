@@ -29,5 +29,12 @@ Route::get('/active-category/{category_id}','categoryController@active_category'
 
 /********************Product Controller**************************/
 Route::get('/add-product','productController@index');
+Route::post('/save-product', 'productController@save_product');
+Route::get('/view-product','productController@view_product');
+Route::get('/delete-product/{product_id}', 'productController@delete_product');
+Route::get('/edit-product/{product_id}', 'productController@edit_product');
+Route::post('/update-product/{product_id}', 'productController@update_product');
+Route::get('/unactive-product/{product_id}', 'productController@unactive_product');
+Route::get('/active-product/{product_id}', 'productController@active_product');
 
 
