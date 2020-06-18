@@ -11,7 +11,18 @@
 |
 */
 
-Route::get('/','adminController@index');
+/*********************User controller****************************/
+Route::get('/','homeController@index');
+
+
+
+
+
+
+
+/********************Admin Controller************************/
+Route::get('/admin', 'adminController@index');
+
 
 
 
@@ -38,3 +49,8 @@ Route::get('/unactive-product/{product_id}', 'productController@unactive_product
 Route::get('/active-product/{product_id}', 'productController@active_product');
 
 
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
